@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Style inputs with type="text", select elements and textarea */
+input[type=text], input[type=password], input[type=number], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, textarea:focus {
+    background-color: #dddddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #dddddd;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn, .loginbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.deactivatebtn {
+    background-color: #e72a2a;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.wishlistbtn {
+    background-color: #008CBA;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.autobidbtn {
+    background-color: #ffa500;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.mark-as-read {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    float: right;
+    border-radius: 4px;
+    opacity: 0.9;
+}
+
+.mark-as-unread {
+    background-color: #e72a2a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    float: right;
+    border-radius: 4px;
+    opacity: 0.9;
+}
+
+.close-button {
+    cursor: pointer;
+    /*position: absolute;*/
+    float: right;
+    /*padding: 5px 5px;*/
+}
+
+.registerbtn:hover, .loginbtn:hover, .mark-as-read:hover {
+    background-color: #45a049;
+}
+
+.deactivatebtn:hover, .mark-as-unread:hover {
+    background-color: #b80606;
+}
+
+.wishlistbtn:hover {
+    background-color: #025773;
+}
+
+.autobidbtn:hover {
+    background-color: #ff8c00;
+}
+
+.auction-btn-group button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    border-radius: 4px;
+    width: calc(100% / 3);
+}
+
+/* Clear floats (clearfix hack) */
+.auction-btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.auction-btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.auction-btn-group button:hover {
+    background-color: #3e8e41;
+}
+
+.marginLeft-Right {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.font-green {
+    color: #45a049;
+}
+
+.font-red {
+    color: #b80606;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+#myInput {
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 5px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myUL, #myUL2, #myUL3, #myULNoLink {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a, #myUL2 li a, #myUL3 li a, #myULNoLink li {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header), #myUL2 li a:hover:not(.header), #myUL3 li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+table, th, td {
+    table-layout: fixed;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    padding: 15px;
+}
+
+td {
+    padding: 15px;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+caption {
+    font-weight: bold;
+    color: black;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    padding: 20px;
+}
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
